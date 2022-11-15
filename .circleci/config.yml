@@ -1,0 +1,8 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: electron.azurecr.io/build:4cec2c5ab66765caa724e37bae2bffb9b29722a5
+    steps:
+      - checkout
+      - run: echo "hello woww"
